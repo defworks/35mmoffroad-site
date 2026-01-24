@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>35mm offroad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .scene {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#ffb347, #2c3e50);
+    }
+
+    .cloud {
+      position: absolute;
+      top: 10%;
+      width: 300px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      filter: blur(10px);
+      animation: moveClouds 60s linear infinite;
+    }
+
+    .cloud:nth-child(1) {
+      left: -300px;
+    }
+
+    .cloud:nth-child(2) {
+      top: 20%;
+      animation-duration: 90s;
+    }
+
+    @keyframes moveClouds {
+      from { transform: translateX(0); }
+      to { transform: translateX(120vw); }
+    }
+
+    .title {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scene">
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="title">35mm offroad</div>
+  </div>
+
+</body>
+</html>
