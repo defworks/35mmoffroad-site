@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>35mm Offroad — Камерные фото-экспедиции на Land Rover</title>
-    <meta name="description" content="Уникальные фото-туры по заброшенным достопримечательностям Подмосковья на легендарных Land Rover Defender. Ламповые поездки и эстетика 35мм.">
-    <meta name="keywords" content="джип-тур, Подмосковье, Land Rover Defender, фотосессия на природе, заброшенные усадьбы, 35mm offroad">
+    
+    <title>35mm Offroad — Авторские джип-туры и фотосессии в Подмосковье</title>
+    <meta name="description" content="Камерные путешествия на легендарных Land Rover Defender. Фото-экспедиции в прошлое, тишина и эстетика 35мм. Забронируйте свой тур.">
+    <meta name="keywords" content="джип-туры, Land Rover Defender, фотосессия на природе, заброшенные усадьбы, Подмосковье, 35mm offroad">
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -14,55 +16,53 @@
     <header>
         <div class="logo">35mm OFFROAD</div>
         <nav>
-            <a href="#about">О проекте</a>
-            <a href="#gallery">Галерея</a>
-            <a href="#booking" class="btn-small">Забронировать</a>
+            <a href="#tours">Джип-туры</a>
+            <a href="#about">Описание</a>
+            <a href="#media">Медиа</a>
+            <a href="#contacts" class="btn-nav">Контакты</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="clouds"></div>
-        <div class="hero-content">
-            <h1>Экспедиции в забытое прошлое</h1>
-            <p>Камерные фото-туры на легендарных Land Rover Defender по лесам Подмосковья</p>
-            <a href="#booking" class="btn-main">Отправиться в путь</a>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-text">
-                <h2>О проекте</h2>
-                <p>35mm Offroad — это не просто оффроад. Это эстетика механики, шум ветра в кронах и шепот истории заброшенных усадеб. Мы создаем условия для глубоких, «ламповых» кадров, используя классические внедорожники как проводников в места, где время остановилось.</p>
+    <main>
+        <section id="tours" class="hero">
+            <div class="hero-content">
+                <h1>Фотоэкспедиции в прошлое на легендарных Land Rover</h1>
+                <p>Без спешки. Без экстрима. В правильном темпе.</p>
+                <a href="#contacts" class="btn-main">Посмотреть формат тура</a>
             </div>
-            <div class="about-img">
-                <img src="img/about.jpg" alt="Land Rover в лесу">
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-text">
+                    <h2>О проекте</h2>
+                    <p><strong>35mmoffroad</strong> — это визуальный дневник медленных поездок. Старые Land Rover Defender, пустые дороги, лес, тропинки, туман и свет. Здесь важны паузы, тишина и внимание к деталям. Это offroad как способ замедлиться и увидеть дорогу.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="gallery" class="gallery">
-        <img src="img/gallery1.jpg" alt="Фото тура 1">
-        <img src="img/gallery2.jpg" alt="Фото тура 2">
-        <img src="img/gallery3.jpg" alt="Фото тура 3">
-    </section>
+        <section id="media" class="gallery">
+            <div class="film-strip">
+                <div class="frame"><img src="img/gallery1.jpg" alt="Land Rover в туманном лесу"></div>
+                <div class="frame"><img src="img/gallery2.jpg" alt="Заброшенная усадьба в Подмосковье"></div>
+                <div class="frame"><img src="img/gallery3.jpg" alt="Детали интерьера винтажного внедорожника"></div>
+            </div>
+        </section>
 
-    <section id="booking" class="booking">
-        <div class="booking-card">
-            <h2>Забронировать тур</h2>
-            <p>Оставьте заявку, и мы подберем идеальную дату для вашей экспедиции.</p>
-            
-            <form action="https://formsubmit.co/Defworks@mail.ru" method="POST">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="tel" name="phone" placeholder="Телефон" required>
-                <input type="date" name="date" required>
-                <button type="submit" class="btn-main">Отправить заявку</button>
-            </form>
-        </div>
-    </section>
+        <section id="contacts" class="booking">
+            <div class="booking-card">
+                <h2>Забронировать тур</h2>
+                <form action="https://formsubmit.co/Defworks@mail.ru" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" placeholder="Телефон" required>
+                    <button type="submit" class="btn-main">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 35mm Offroad. Сделано с любовью к технике и истории.</p>
+        <p>&copy; 2026 35mm OFFROAD. Эстетика дорог и истории.</p>
     </footer>
 
 </body>
