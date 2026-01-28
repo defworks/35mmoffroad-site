@@ -1,85 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>35mm offroad</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-    }
-
-    .scene {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(#ffb347, #2c3e50);
-    }
-
-    .cloud {
-      position: absolute;
-      top: 10%;
-      width: 300px;
-      height: 120px;
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 50%;
-      filter: blur(10px);
-      animation: moveClouds 60s linear infinite;
-    }
-
-    .cloud:nth-child(1) {
-      left: -300px;
-    }
-
-    .cloud:nth-child(2) {
-      top: 20%;
-      animation-duration: 90s;
-    }
-
-    @keyframes moveClouds {
-      from { transform: translateX(0); }
-      to { transform: translateX(120vw); }
-    }
-
-    .title {
-      position: absolute;
-      bottom: 15%;
-      left: 50%;
-      transform: translateX(-50%);
-      color: white;
-      font-size: 48px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35mm Offroad — Камерные фото-экспедиции на Land Rover</title>
+    <meta name="description" content="Уникальные фото-туры по заброшенным достопримечательностям Подмосковья на легендарных Land Rover Defender. Ламповые поездки и эстетика 35мм.">
+    <meta name="keywords" content="джип-тур, Подмосковье, Land Rover Defender, фотосессия на природе, заброшенные усадьбы, 35mm offroad">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="hero">
-  <div class="hero__slides">
-    <div class="hero__slide slide-1"></div>
-    <div class="hero__slide slide-2"></div>
-    <div class="hero__slide slide-3"></div>
-  </div>
 
-  <div class="hero__content">
-    <h1>35mm offroad</h1>
-    <p>Авторские маршруты. Небольшие группы. Фотосессии.</p>
-  </div>
-</section>
-  <div class="scene">
-    <div class="cloud"></div>
-    <div class="cloud"></div>
-    <div class="title">35mm offroad</div>
-  </div>
+    <header>
+        <div class="logo">35mm OFFROAD</div>
+        <nav>
+            <a href="#about">О проекте</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#booking" class="btn-small">Забронировать</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="clouds"></div>
+        <div class="hero-content">
+            <h1>Экспедиции в забытое прошлое</h1>
+            <p>Камерные фото-туры на легендарных Land Rover Defender по лесам Подмосковья</p>
+            <a href="#booking" class="btn-main">Отправиться в путь</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>О проекте</h2>
+                <p>35mm Offroad — это не просто оффроад. Это эстетика механики, шум ветра в кронах и шепот истории заброшенных усадеб. Мы создаем условия для глубоких, «ламповых» кадров, используя классические внедорожники как проводников в места, где время остановилось.</p>
+            </div>
+            <div class="about-img">
+                <img src="img/about.jpg" alt="Land Rover в лесу">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <img src="img/gallery1.jpg" alt="Фото тура 1">
+        <img src="img/gallery2.jpg" alt="Фото тура 2">
+        <img src="img/gallery3.jpg" alt="Фото тура 3">
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="booking-card">
+            <h2>Забронировать тур</h2>
+            <p>Оставьте заявку, и мы подберем идеальную дату для вашей экспедиции.</p>
+            
+            <form action="https://formsubmit.co/Defworks@mail.ru" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <input type="date" name="date" required>
+                <button type="submit" class="btn-main">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 35mm Offroad. Сделано с любовью к технике и истории.</p>
+    </footer>
 
 </body>
 </html>
