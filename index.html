@@ -2,78 +2,116 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>35mm Offroad</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>35mm OFFROAD — Авторские фото-экспедиции на Land Rover в Подмосковье</title>
-    <meta name="description" content="Уникальные джип-туры на классических Land Rover Defender. Исследуйте заброшенные усадьбы и леса Подмосковья в эстетике 35мм. Без экстрима, только тишина и история.">
-    <meta name="keywords" content="джип-тур, Land Rover Defender, фотосессия на природе, 35mm offroad, заброшенные места Подмосковья, экспедиция">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">35mm OFFROAD</div>
-        <nav>
-            <a href="#tours">Джип-туры</a>
-            <a href="#about">Описание</a>
-            <a href="#media">Медиа</a>
-            <a href="#contacts" class="btn-nav">Контакты</a>
-        </nav>
-    </header>
+<!-- 1. Hero -->
+<section class="hero">
+    <div class="overlay">
+        <h1>35mm OFFROAD</h1>
+        <p>Внедорожные путешествия. Киношный взгляд. Настоящие маршруты.</p>
+        <a href="#tours" class="btn">Выбрать маршрут</a>
+    </div>
+</section>
 
-    <main>
-        <section id="tours" class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>35mm OFFROAD — Фотоэкспедиции в прошлое</h1>
-                <p>Камерные путешествия на легендарных Land Rover Defender по местам с историей.</p>
-                <a href="#contacts" class="btn-main">Посмотреть формат тура</a>
-            </div>
-        </section>
+<!-- 2. О проекте -->
+<section class="section about">
+    <div class="content">
+        <h2>О проекте</h2>
+        <p>
+            35mm Offroad — это авторские внедорожные маршруты по дикой природе,
+            снятые как кино. Мы объединяем путешествия, технику, эстетику и свободу.
+        </p>
+    </div>
+</section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-text">
-                    <h2>О проекте</h2>
-                    <p><strong>35mmoffroad</strong> — это визуальный дневник медленных поездок. Старые Land Rover Defender, пустые дороги, лес, тропинки, туман, пыль и свет. Здесь важны паузы, тишина и внимание к деталям. Это offroad не как испытание, а как способ замедлиться и увидеть дорогу.</p>
-                </div>
-            </div>
-        </section>
+<!-- 3. Формат путешествий -->
+<section class="section format">
+    <h2>Формат</h2>
+    <div class="cards">
+        <div class="card">1–3 дня автономных маршрутов</div>
+        <div class="card">Подготовленные внедорожники</div>
+        <div class="card">Мини-группы</div>
+        <div class="card">Съёмка фото и видео</div>
+    </div>
+</section>
 
-        <section id="media" class="gallery-section">
-            <div class="film-strip">
-                <div class="frame">
-                    <img src="img/gallery1.jpg" alt="Крупный план винтажного внедорожника Land Rover в туманном лесу — эстетика 35мм">
-                </div>
-                <div class="frame">
-                    <img src="img/gallery2.jpg" alt="Заброшенная усадьба и старинная архитектура в экспедиции по лесам">
-                </div>
-                <div class="frame">
-                    <img src="img/gallery3.jpg" alt="Пленочная камера 35mm на мшистом камне — камерная атмосфера фото-путешествия">
-                </div>
-                <div class="frame">
-                    <img src="img/gallery4.jpg" alt="Экспедиционный Land Rover Defender на фоне руин старой церкви">
-                </div>
-            </div>
-        </section>
+<!-- 4. Маршруты -->
+<section class="section tours" id="tours">
+    <h2>Маршруты</h2>
+    <div class="cards">
+        <div class="card image-card">
+            <img src="images/tour1.jpg" alt="">
+            <h3>Лес и болота</h3>
+            <p>Глубокие колеи, броды, ночёвка в лесу</p>
+        </div>
+        <div class="card image-card">
+            <img src="images/tour2.jpg" alt="">
+            <h3>Пески и поля</h3>
+            <p>Скорость, простор и закаты</p>
+        </div>
+    </div>
+</section>
 
-        <section id="contacts" class="booking">
-            <div class="booking-card">
-                <h2>Забронировать тур</h2>
-                <form action="https://formsubmit.co/Defworks@mail.ru" method="POST">
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="tel" name="phone" placeholder="Телефон" required>
-                    <button type="submit" class="btn-main">Отправить заявку</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<!-- 5. Техника -->
+<section class="section gear">
+    <h2>Техника</h2>
+    <p>
+        Мы используем подготовленные внедорожники: лебёдки, лифт,
+        грязевая резина, экспедиционное снаряжение.
+    </p>
+    <img src="images/gear.jpg" alt="">
+</section>
 
-    <footer>
-        <p>&copy; 2026 35mm OFFROAD. Без спешки. Без экстрима. В правильном темпе.</p>
-    </footer>
+<!-- 6. Видео -->
+<section class="section video">
+    <h2>Видео и атмосфера</h2>
+    <p>
+        Каждое путешествие — это короткометражный фильм.
+        Мы снимаем движение, эмоции и дорогу.
+    </p>
+    <img src="images/video.jpg" alt="">
+</section>
+
+<!-- 7. Галерея -->
+<section class="section gallery">
+    <h2>Галерея</h2>
+    <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="">
+        <img src="images/gallery2.jpg" alt="">
+        <img src="images/gallery3.jpg" alt="">
+    </div>
+</section>
+
+<!-- 8. Для кого -->
+<section class="section audience">
+    <h2>Для кого</h2>
+    <ul>
+        <li>Любители внедорожников</li>
+        <li>Путешественники</li>
+        <li>Создатели контента</li>
+        <li>Те, кто устал от города</li>
+    </ul>
+</section>
+
+<!-- 9. Как присоединиться -->
+<section class="section join">
+    <h2>Как присоединиться</h2>
+    <p>
+        Напишите нам, выберите маршрут и дату.
+        Мы берём на себя организацию и сопровождение.
+    </p>
+    <a href="#" class="btn">Связаться</a>
+</section>
+
+<!-- 10. Футер -->
+<footer class="footer">
+    <p>© 35mm Offroad</p>
+    <p>YouTube · Telegram · Instagram*</p>
+</footer>
 
 </body>
 </html>
