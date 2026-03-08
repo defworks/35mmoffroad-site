@@ -1,28 +1,12 @@
-const images = document.querySelectorAll(".gallery img")
-const lightbox = document.getElementById("lightbox")
-const lightboxImg = document.getElementById("lightbox-img")
-const closeBtn = document.querySelector(".close")
 
-images.forEach(img => {
-
-img.addEventListener("click", () => {
-
-lightbox.style.display = "flex"
-
-lightboxImg.src = img.src
-
+fetch("data/gallery.json")
+.then(res=>res.json())
+.then(data=>{
+const gallery=document.getElementById("gallery")
+data.images.forEach(img=>{
+const image=document.createElement("img")
+image.src="img/"+img.file
+image.alt=img.title
+gallery.appendChild(image)
 })
-
 })
-
-closeBtn.onclick = () => {
-
-lightbox.style.display = "none"
-
-}
-
-lightbox.onclick = () => {
-
-lightbox.style.display = "none"
-
-}
