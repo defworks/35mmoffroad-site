@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "file": "photo1.jpg",
+      "title": "Mountain road"
+    },
+    {
+      "file": "photo2.jpg",
+      "title": "Forest trail"
+    },
+    {
+      "file": "photo3.jpg",
+      "title": "Camp"
+    },
+    {
+      "file": "photo4.jpg",
+      "title": "River crossing"
+    },
+    {
+      "file": "photo5.jpg",
+      "title": "Offroad sunset"
+    },
+    {
+      "file": "photo6.jpg",
+      "title": "Expedition track"
+    }
+  ]
+}
