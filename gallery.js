@@ -1,12 +1,11 @@
 
-fetch("data/gallery.json")
-.then(res=>res.json())
+fetch('data/gallery.json')
+.then(r=>r.json())
 .then(data=>{
-const gallery=document.getElementById("gallery")
+const g=document.getElementById('gallery')
 data.images.forEach(img=>{
-const image=document.createElement("img")
-image.src="img/"+img.file
-image.alt=img.title
-gallery.appendChild(image)
+let el=document.createElement('img')
+el.src='img/'+img
+g.appendChild(el)
 })
 })
